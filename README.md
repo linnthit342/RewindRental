@@ -24,15 +24,18 @@ Images
     * aot.jpeg
     * allofus.jpeg
 All files have been validated and found error-free.
-Notes
+
+#Notes
 * Clicking on "Movies" and "Anime" in the navigation bar leads to related XML files.
 * Terms and conditions page is created using termsandcondiitionssample.com.
 * Privacy page template is utilized from visser.com.au.
 * About us page reference: vudu.com.
-References
+
+#References
 * IMDb, Rotten Tomatoes, Netflix, JustWatch, Wikipedia, and other sources have been referenced for plot summaries, reviews, and episode lists.
 * Photo references are sourced from IMDb, The Movie Database (TMDb), Pinterest, and other sources.
-Acknowledgements
+
+#Acknowledgements
 * Special thanks to the mentioned sources for their valuable data and resources.
 * The project is solely owned by Linn Thit Win.
 Feel free to explore the Rewind Rentals website and enjoy the movie experience! 🎬🍿
