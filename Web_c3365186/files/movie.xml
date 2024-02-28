@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Category 
+[
+  <!ELEMENT Category (product+)>
+  <!ATTLIST Category category CDATA #REQUIRED>
+
+  <!ELEMENT product (name, description, producers+, rental_cost, search_tags*, parental_rating?, product_condition?, extras+, reviews*, img_file+, webpage_url)>
+  <!ATTLIST product id ID #REQUIRED>
+
+  <!ELEMENT name (#PCDATA)>
+  <!ATTLIST name mode (physical|digital) #REQUIRED>
+
+  <!ELEMENT description (#PCDATA)>
+
+  <!ELEMENT producers (#PCDATA)>
+  <!ELEMENT rental_cost (#PCDATA)>
+  <!ELEMENT search_tags (#PCDATA)>
+  <!ELEMENT parental_rating (#PCDATA)>
+  <!ELEMENT product_condition (#PCDATA)>
+  
+  <!ELEMENT extras (alt_name+,additional_cost?)>
+    <!ELEMENT alt_name (#PCDATA)>
+    <!ELEMENT additional_cost (#PCDATA)>
+
+  <!ELEMENT reviews (#PCDATA)>
+  <!ATTLIST reviews rating CDATA #REQUIRED>
+
+  <!ELEMENT  img_file (#PCDATA)>
+  <!ATTLIST img_file img_name CDATA #IMPLIED>
+
+  <!ELEMENT webpage_url (#PCDATA)>
+  <!ATTLIST webpage_url website_name CDATA #IMPLIED>
+
+  <!ENTITY St "Stranger Things">
+  <!ENTITY Aou "All of us are dead">
+  <!ENTITY Jk "Jujutsu kaisen">
+]>
+
+
+<Category category="movies">
+  <product id="m1">
+    <name mode="digital"> Spider-Man: No Way Home (2021) </name>
+    <description> With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man. Peter Parker's secret identity is revealed to the entire world. Desperate for help, Peter turns to Doctor Strange to make the world forget that he is Spider-Man. The spell goes horribly wrong and shatters the multiverse, bringing in monstrous villains that could destroy the world. Picking up where Far From Home left off, Peter Parker's whole world is turned upside down when his old enemy Mysterio posthumously reveals his identity to the public. Wanting to make his identity a secret, Peter turns to Doctor Strange for help. But when Strange's spell goes haywire, Peter must go up against five deadly new enemies--the Green Goblin, Dr. Octopus, Electro. </description>
+    <producers>Kevin Feige</producers>
+    <producers>Amy Pascal</producers>
+    <rental_cost>$5</rental_cost>
+    <search_tags>#spidermannowayhome</search_tags>
+    <search_tags>#spidermanlatestmovie</search_tags>
+    <search_tags>#spidermanmovie</search_tags>
+    <parental_rating>PG-13</parental_rating>
+    <product_condition> Recent popular movie</product_condition>
+    <extras>
+      <alt_name>Spider-Man: No Way Home (with 11 minutes of extra content) </alt_name>
+      <additional_cost> 0.5$ </additional_cost>
+    </extras>
+    <reviews rating="4.8 out of 5">“No Way Home” is a distinguished and entertaining film that is easily one of the best movies of 2021. The action sequences are tense, and the cinematography is stunning particularly when the audience sees three different Spider-Man battling together for the first time. The acting is tremendous. </reviews>
+    <img_file img_name="nowayhome_pic1">/images/nowayhome_pic1.jpg</img_file>
+    <webpage_url>https://en.wikipedia.org/wiki/Spider-Man:_No_Way_Home#Production</webpage_url>
+  </product>
+
+  <product id="m2">
+    <name mode="digital"> &St; Season 4 </name>
+    <description>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying 
+    supernatural forces and one strange little girl.Due to the events in Hawkins and the imminent danger to her friends,
+    Eleven goes with Dr. Martin Brenner and Sam Owens to a secret facility to help her regain her powers, while Mike, Will,
+    Jonathan and his friend Argyle try to track her down. </description>
+    <producers>Duffer Brothers</producers>
+    <rental_cost> $2 for each episode</rental_cost>
+    <search_tags>#strangerthingsseason4 </search_tags>
+    <search_tags>#strangerthings4</search_tags>
+    <parental_rating> TV-14  </parental_rating>
+    <product_condition> Popular mystery series </product_condition>
+    <extras>
+      <alt_name> &St; </alt_name>
+    </extras>
+    <reviews rating="4.8 out of 5"> Yes, episodes still feel overlong, but the stakes seem real again and the world genuinely
+    terrifying, far more in keeping with the show, Stephen King influences than any aimless feelgood Goonies vibe. 
+    Stranger Things is scary and strange again. </reviews>
+    <img_file img_name="Stranger_ThingsS4">/images/Stranger_ThingsS4.jpeg</img_file>
+    <webpage_url>https://en.wikipedia.org/wiki/Stranger_Things_(season_4)</webpage_url>
+  </product>
+
+
+  <product id="m3">
+    <name mode="digital"> &Aou; Season 1 </name>
+    <description> Korean zombie series All of Us Are Dead is yet another example of brilliant television from South Korea.
+    The 12 episodes follow a group of high school students in Hyosan as they fight to survive in a city overwhelmed by 
+    zombies. </description>
+    <producers>JTBC Studios</producers>
+    <producers>Jong-hak Production</producers>
+    <rental_cost> $1.5 for each episode </rental_cost>
+    <search_tags>#allofusaredead </search_tags>
+    <parental_rating>TV-MA </parental_rating>
+    <product_condition> Horror, Fantasy </product_condition>
+    <extras>
+      <alt_name> &Aou; </alt_name>
+      <additional_cost> Total $18  </additional_cost>
+    </extras>
+    <reviews rating="4.7 out of 5"> All of Us Are Dead is a thrilling zombie series full of brutal and violent scenes involving characters
+    who are all so human.The series is an excellent piece of television that fans of the zombie genre will devour like the
+    tastiest of brains.</reviews>
+    <img_file>/images/All_of_us.jpeg</img_file>
+    <webpage_url website_name="NETFLIX">https://www.netflix.com/mm/title/81237994</webpage_url>
+  </product>
+    
+ 
+</Category>
+

@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+h1,h2{
+   text-transform: uppercase;
+}
+
+body{
+   background-color: black;
+}
+
+/* space for navigation bar  */
+.menu{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 12px 0;
+   background-color:#a7adba;
+}
+
+/*logo modification */
+.logo{
+   color: rgb(255, 0, 0);
+   margin-left: 1cm;
+}
+
+.logo span{
+   color: indigo;
+}
+
+/* positioning texts in navigation bar */
+.menu ul{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+/*  adding spaces between menu texts*/
+.menu ul li{
+   padding: 15px 30px;
+   position: relative;
+}
+
+/* menu texts modify */
+.menu ul li a{
+   text-decoration: none;
+   font-size: 20px;
+   color: black;
+   transition: all 0.3s;
+}
+
+/*adding colors when hovering*/
+.menu ul li a:hover{
+   color: #214dad;
+}
+
+/*clear dropdown menu to only display when hover*/
+.sub_menu{
+   display: none;
+   border-radius: 30px;
+   border-bottom: 5px solid #21a6ad;
+}
+
+/*dropdown box menu*/
+.menu ul li:hover .sub_menu{
+   display: block;
+   position:absolute;
+   left: 5px;
+   top: 100%;
+   background-color: #a7adba;
+}
+
+.menu ul li:hover .sub_menu ul{
+   display: block;
+   margin: 10px;
+}
+
+.menu ul li:hover .sub_menu ul li{
+   width: 120px;
+   padding: 10px;
+}
+
+.menu ul li a.active::after,
+.menu ul li a:hover::after{
+   content: "";
+   background: #214dad;
+   height: 2px;
+   width: 35%;
+   position: absolute;
+   bottom: -7px;
+   left: 20px;
+}
+
+/*Homepage Background*/
+ 
+.bg{
+   background-image: url(../images/bgpic.jpeg);
+   height: 120vh;
+   width: 100%;
+   background-size: cover;
+   background-position: top 25% right 0;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+   padding: 30%;
+}
+
+.bg h1{
+   color: aqua;
+}
+
+.welcome{
+   color: aqua;
+   font-size: xx-large;
+   text-align: center;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.welcome h2{
+   text-decoration: underline;
+
+}
+/*////////////////////////////////////////////*/
+
+/*contact.html #EDC7B7 */
+.c_form{
+   padding: 20px;
+   background-color: rgb(255, 253, 209);
+   width: 40%;
+   margin: 10%;
+   min-height: 100vh;
+}
+.cfheader{
+   position: relative;
+   padding: 10px;
+   margin-bottom: 10px;
+ }
+
+ .field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 2rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+
+.urgent{
+   margin-top: 10px;
+}
+
+.btn{
+   width: 30%;
+   margin-top: 10%;
+   margin-left: 10%;
+   margin-bottom: 10%;
+   padding: 3%;
+   font-size: 1.1rem;
+   cursor: pointer;
+   transition: .3s;
+}
+
+.btn:hover{
+    background-color: #2198ad;
+}
+
+.c_form, .field, .btn{
+   border-radius: 25px;
+   border: 5px solid #2198ad;
+}
+
+
+/*////////////////////////////////////////////*/
+
+
+
+/*privacy.html space */
+
+.pv_container{
+   padding: 1cm;
+}
+
+
+.privacy{
+   font-style: italic;
+   font-family: Arial, sans-serif;
+   background: #a7adba;
+   padding: 1cm;
+   border-radius: 25px;
+   border: 3px solid #21a6ad;
+}
+
+/*Terms.html*/
+
+
+.term_box{
+   margin: 1cm;
+   background-color:#a7adba;
+   padding: 1cm;
+   border-radius: 25px;
+   border: 5px solid #2198ad;
+}
+
+.term_box h1,h2,h4{
+   padding-bottom: 10px;
+   padding-top: 10px;
+}
+
+
+
+/* featured movie section Homepage*/
+
+#featured-movies{
+   max-width: 1170px;
+   margin: 30px auto;
+   width: 100%;
+}
+
+.featured-heading{
+   width: 100%;
+   padding: 10px 20px;
+   border: 1px solid #21a6ad;
+   box-shadow: 2px 2px 5px #21a6ad;
+}
+
+.featured-heading h2{
+   color: red;
+   font-weight: 500;
+   font-size: 2rem;
+}
+
+.f-container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-gap: 35px;
+   margin: 20px 0;
+
+
+}
+
+.f-box{
+   width: 100%;
+   height: 550px;
+   overflow: hidden;
+   border: 1px solid #a7adba;
+   box-shadow: 2px 2px 5px red;
+   position: relative;
+}
+
+
+.f-box .f-img{
+   width: 100%;
+   height: 100%;
+}
+
+.f-box .f-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: top center;
+}
+
+.f-text{
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(360deg, #161616b9 35%, rgba(37,37,37,0.23) 64%);
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 20px;
+   justify-content: space-between;
+}
+
+.f-text{
+   color: white;
+}
+
+.f-text .genre a:hover{
+  color: red
+}
+/* rental costs for featured movies */
+
+.f-text .cost{
+   background-color: black;
+   color: greenyellow;
+   font-size: x-large;
+   font-weight: 600;
+   padding: 0px 5px;
+   height: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+}
+
+
+/* movie name modified*/
+
+.m-name{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.f-text .m-name span, strong{
+   margin-top: 10px;
+   font-size: 1rem;
+   font-weight: 500;
+   line-height: 20px;
+   margin-top: 10px;
+   letter-spacing: 0.5px;
+}
+
+.genre{
+   color: whitesmoke;
+}
+
+.genre a{
+   color: #2198ad;
+   margin: 0px 3px;
+}
+
+.f-text .rating{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+
+}
+ 
+.f-box:hover{
+   box-shadow: 2px 2px 30px red;
+   cursor: pointer;
+}
+
+/*about us*/
+.aus_bg{
+   background-image: url(/images/dbg.jpeg);
+   height: auto;
+   width: 100%;
+   background-size: cover;
+   background-position: top 25% right 0;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.aus_container{
+   padding: 3%;
+   padding-top: 100px;
+   padding-right: 30%;
+   margin-bottom: 3rem;
+   display: block;
+   align-items: center;
+}
+
+
+.aus{
+   font-family: Arial, sans-serif;
+   background: #a7adba;
+   padding: 1cm;
+   border-radius: 25px;
+   border: 3px solid #21a6ad;
+   
+}
+
+/*footer section/////////////////////////////*/
+.footer_box{
+   background-color: #212329;
+   padding: 4rem 0 4rem 0;
+}
+
+.footer{
+   width: 80%;
+   min-height: 30vh;
+   background-color: #212329;
+   color: #fff;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 auto;
+   gap: 2rem;
+   padding-bottom: 10px;
+   padding-top: 2rem;
+}
+
+.foot{
+   display: flex;
+   flex-direction: column;
+   padding-left: 0;
+   padding-right: 2rem;
+}
+
+.foot a, .footer address{
+   text-decoration: none;
+   color: #fff;
+   padding-left: 30px;
+   padding-top:20px;
+   font-size: larger;
+}
+
+
+footer a:first-of-type {
+   margin-right: auto;
+ }
+
+.foot a:hover {
+   color: #214dad;
+   transition: 0.3s;
+}
+/*/////////////////////////////////////*/
+

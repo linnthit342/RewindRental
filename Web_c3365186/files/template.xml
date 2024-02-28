@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Category 
+[
+  <!ELEMENT Category (product+)>
+  <!ATTLIST Category category CDATA #REQUIRED>
+
+  <!ELEMENT product (name, description, producers+, rental_cost, search_tags*, parental_rating?, product_condition?, extras+, reviews*, img_file+, webpage_url)>
+  <!ATTLIST product id ID #REQUIRED>
+
+  <!ELEMENT name (#PCDATA)>
+  <!ATTLIST name mode (physical|digital) #REQUIRED>
+
+  <!ELEMENT description (#PCDATA)>
+
+  <!ELEMENT producers (#PCDATA)>
+  <!ELEMENT rental_cost (#PCDATA)>
+  <!ELEMENT search_tags (#PCDATA)>
+  <!ELEMENT parental_rating (#PCDATA)>
+  <!ELEMENT product_condition (#PCDATA)>
+  
+  <!ELEMENT extras (alt_name+,additional_cost?)>
+    <!ELEMENT alt_name (#PCDATA)>
+    <!ELEMENT additional_cost (#PCDATA)>
+
+  <!ELEMENT reviews (#PCDATA)>
+  <!ATTLIST reviews rating CDATA #REQUIRED>
+
+  <!ELEMENT  img_file (#PCDATA)>
+  <!ATTLIST img_file img_name CDATA #IMPLIED>
+
+  <!ELEMENT webpage_url (#PCDATA)>
+  <!ATTLIST webpage_url website_name CDATA #IMPLIED>
+
+  <!ENTITY St "Stranger Things">
+  <!ENTITY Aou "All of us are dead">
+  <!ENTITY Jk "Jujutsu kaisen">
+]>
+
+
+
+<Category category="movies">
+  <product id="m1">
+    <name mode="digital">  </name>
+    <description>  </description>
+    <producers></producers>
+    <rental_cost>  </rental_cost>
+    <search_tags>  </search_tags>
+    <parental_rating>  </parental_rating>
+    <product_condition>  </product_condition>
+    <extras>
+      <alt_name>  </alt_name>
+      <additional_cost>  </additional_cost>
+    </extras>
+    <reviews rating="">  </reviews>
+    <img_file></img_file>
+    <webpage_url></webpage_url>
+  </product>
+    
+</Category>
+

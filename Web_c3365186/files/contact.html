@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rewind Rentals</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="menu">
+      <h1 class="logo"><span>Rewind </span>Rentals</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li>
+          <a href="#">Products<i class="fas fa-caret-down"></i></a>
+          <div class="sub_menu">
+            <ul>
+              <li><a href="movie.xml" target="_blank">Movies</a></li>
+              <li><a href="anime.xml" target="_blank">Anime</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms and Conditions</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="c_form">
+        <h2 class="cfheader">Contact Form</h2>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+          <label for="username">Username</label><br>
+          <input
+            type="text"
+            id="username"
+            placeholder="Name" 
+	    class="field" 
+	    required>
+          <br>
+
+          <label for="email">Email</label><br>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email address"
+            class="field"
+            required><br >
+
+          <label for="title">Title</label><br>
+          <input
+            type="text"
+            id="title"
+            placeholder="Subject of you want to know"
+            class="field"
+            required><br>
+
+          <p><label for="txtarea">Message</label></p>
+          <textarea
+            class="field"
+            name="txta"
+            id="txtarea"
+            cols="30"
+            rows="10"
+            placeholder="Text ur msg..."
+            required
+          ></textarea>
+          <br>
+
+          <p class="urgent">Urgent?</p>
+          <input type="radio" name="urgency" id="yes" class="urgent" required>
+          <label for="yes">Yes</label><br>
+
+          <input type="radio" name="urgency" id="no" class="urgent" required>
+          <label for="no">No</label><br>
+
+          <button type="reset" value="reset" class="btn"><i>Reset</i></button>
+          <button type="submit" value="submit" class="btn">
+            <i>Submit</i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer_box">
+      <div class="footer">
+        <div class="foot">
+          <address>
+            Call: (07)12345678<br><br>
+            Address:123, Blah Street,AUSTRALIA<br><br>
+            E-mail: rewindrentals@gmail.com
+ 	    <br><br>
+	    &copy;Copyright 2009-2029
+          </address>
+        </div>
+        <div class="foot">
+          <a href="index.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="contact.html">Contact us</a>
+        </div>
+        <div class="foot">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms and Conditions</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

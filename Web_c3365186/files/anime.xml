@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Category 
+[
+  <!ELEMENT Category (product+)>
+  <!ATTLIST Category category CDATA #REQUIRED>
+
+  <!ELEMENT product (name, description, producers+, rental_cost, search_tags*, parental_rating?, product_condition?, extras+, reviews*, img_file+, webpage_url)>
+  <!ATTLIST product id ID #REQUIRED>
+
+  <!ELEMENT name (#PCDATA)>
+  <!ATTLIST name mode (physical|digital) #REQUIRED>
+
+  <!ELEMENT description (#PCDATA)>
+
+  <!ELEMENT producers (#PCDATA)>
+  <!ELEMENT rental_cost (#PCDATA)>
+  <!ELEMENT search_tags (#PCDATA)>
+  <!ELEMENT parental_rating (#PCDATA)>
+  <!ELEMENT product_condition (#PCDATA)>
+  
+  <!ELEMENT extras (alt_name+,additional_cost?)>
+    <!ELEMENT alt_name (#PCDATA)>
+    <!ELEMENT additional_cost (#PCDATA)>
+
+  <!ELEMENT reviews (#PCDATA)>
+  <!ATTLIST reviews rating CDATA #REQUIRED>
+
+  <!ELEMENT  img_file (#PCDATA)>
+  <!ATTLIST img_file img_name CDATA #IMPLIED>
+
+  <!ELEMENT webpage_url (#PCDATA)>
+  <!ATTLIST webpage_url website_name CDATA #IMPLIED>
+
+  <!ENTITY St "Stranger Things">
+  <!ENTITY Aou "All of us are dead">
+  <!ENTITY Jk "Jujutsu kaisen">
+]>
+
+
+
+<Category category="anime">
+  <product id="a1">
+    <name mode="digital">Attack on Titan Season4 part2</name>
+    <description> As Marley battles the Mid-East Alliance to end a four-year war,
+    a group of Warrior candidates on the front lines compete to be the successor of the Armored Titan.
+    </description>
+    <producers>MAPPA</producers>
+    <rental_cost> $10 </rental_cost>
+    <search_tags> #aots4 </search_tags>
+    <parental_rating>MAPPA </parental_rating>
+    <product_condition>  </product_condition>
+    <extras>
+      <alt_name>Shingeki no kyojin</alt_name>
+      <additional_cost>  </additional_cost>
+    </extras>
+    <reviews rating="4.9 out of 5"> The history and the plot twist are just amazing, this is a must watch for all the people not just anime fans, as someone who only
+     watch movies and little series this one is fairly the number one for the brillant histoy and the writing, an absolute masterpice. </reviews>
+    <img_file>/images/aot.jpeg</img_file>
+    <webpage_url>https://en.wikipedia.org/wiki/Attack_on_Titan_(season_4)</webpage_url>
+  </product>
+
+  <product id="a2">
+    <name mode="digital">Naruto Shippuden</name>
+    <description>Naruto: Shippuden is an anime series mainly adapted from Part II of Masashi Kishimoto's original manga series, with exactly 500 episodes. It is set two and a half years
+     after the original series in the Naruto universe, following the ninja teenager Naruto Uzumaki and his allies.  </description>
+    <producers>Studio Pierrot</producers>
+    <producers>TV Tokyo</producers>
+    <rental_cost> $30</rental_cost>
+    <search_tags>#narutoshippuden </search_tags>
+    <parental_rating>TV-PG</parental_rating>
+    <product_condition>  </product_condition>
+    <extras>
+        <alt_name>Naruto </alt_name>
+        <additional_cost>  </additional_cost>
+    </extras>
+    <reviews rating="4.8 out of 5">As a kid, I did hear about this show through a couple of television promos and my friends. After so many years, I finally got to watch Naruto and
+    this turned out to be one of the best things I've done in my life. I have never identified with a shounen protagonist more, and even supporting characters have been written with
+    care and brilliance.  </reviews>
+    <img_file>/images/naruto.jpeg</img_file>
+    <webpage_url>https://en.wikipedia.org/wiki/List_of_Naruto:_Shippuden_episodes#:~:text=Naruto%3A%20Shippuden%20is%20an%20anime,Naruto%20Uzumaki%20and%20his%20allies.</webpage_url>
+  </product>
+
+  <product id="a3">
+    <name mode="digital"> &Jk; </name>
+    <description>A boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself. He enters a shaman's school to be able to locate the demon's other
+     body parts and thus exorcise himself.  </description>
+    <producers>MAPPA</producers>
+    <rental_cost> $12 </rental_cost>
+    <search_tags>#jujutsu</search_tags>
+    <parental_rating>TV-MA</parental_rating>
+    <product_condition>  </product_condition>
+    <extras>
+      <alt_name> &Jk; Movie 0</alt_name>
+      <additional_cost> $4</additional_cost>
+    </extras>
+    <reviews rating="4.8 out of 5">One episode in and I feel like this is going to become a high tier anime . I just cant wait to see how episode 2 is . you will know why
+     by the end of the first episode! trust me watch it its worth it . </reviews>
+    <img_file>/images/jujutsu.jpeg</img_file>
+    <webpage_url>https://en.wikipedia.org/wiki/Jujutsu_Kaisen</webpage_url>
+  </product>
+
+</Category>
